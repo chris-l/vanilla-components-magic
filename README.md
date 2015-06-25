@@ -1,6 +1,11 @@
 # Vanilla Web Components Magic
 _A collection of useful snippets for creating VanillaJS Web Components_
 
+## index
+
+- [**addShadowRoot**](#addshadowroot): Creates a Shadow Root at `this.root` and convert the styles for use on browsers that use webcomponents.js instead of using native support.
+- [**declaredProps**](#declaredprops): Used to declare properties, in a way similar to the way Polymer does it. Allows to set observers and synchronizing attributes to properties and viceversa.
+
 ## VanillaJS Web Components
 
 Those are web components that are created without using Polymer, X-Tag, or any of those libraries that wrap the creation of web components, and instead manually creating them using directly the browser API (or the webcomponents.js polyfill).
