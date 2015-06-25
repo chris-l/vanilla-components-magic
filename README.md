@@ -60,7 +60,7 @@ addShadowRoot(obj, idTemplate, [tagName])
 
  - _{object}_ `obj` The element to which add the shadow root.
  - _{string}_ `idTemplate` The id of the template element.
- - _{string}_ `[tagName]` The name of the tag used by the element, used for rewriting the css. If omitted, it will use the `idTemplate` as `tagName`.
+ - _{string}_ `[tagName]` The name of the tag used by the element, used for rewriting the css. If omitted, it will use the `idTemplate` as `tagName`. If this is extending another element, put here: `element[is=tagName]`
 
 You need to set an id to the template, like this:
 

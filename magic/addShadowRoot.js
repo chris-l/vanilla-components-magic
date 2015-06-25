@@ -31,6 +31,7 @@
  * @param {string} idTemplate The id of the template element.
  * @param {string} [tagName] The name of the tag used by the element,
  *                 used for rewriting the css. If omitted, it will use the idTemplate as tagName.
+ *                 If this is extending another element, put here: element[is=tagName]
  */
 var addShadowRoot = (function () {
   'use strict';
