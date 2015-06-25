@@ -46,7 +46,7 @@ And remember that the idea is to have **small** snippets to solve common problem
 
 Creates a Shadow Root at `this.root` and convert the styles for use on browsers that use webcomponents.js instead of using native support.
 
-First, copy-paste the [addShadowRoot snippet](magic/addShadowRoot.js) into your code.
+**First, copy-paste the [addShadowRoot snippet](magic/addShadowRoot.js) into your code.**
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -91,7 +91,7 @@ Used to declare properties, in a way similar to the way Polymer does it.
 
 It allows to set observers for properties and synchronizing attributes to properties (and optionally from properties to attributes).
 
-First, copy-paste the [declaredProps snippet](magic/declaredProps.js) into your code.
+**First, copy-paste the [declaredProps snippet](magic/declaredProps.js) into your code.**
 
 To use this, an object with the properties must be created. Here is an example that show the different possibilities:
 
