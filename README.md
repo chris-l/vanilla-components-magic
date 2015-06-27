@@ -3,10 +3,11 @@ _A collection of useful snippets for creating VanillaJS Web Components_
 
 ## index
 
-Right now, there are only 2 snippets:
+Right now, there are only 3 snippets:
 
 - [**addShadowRoot**](#addshadowroot): Creates a Shadow Root at `this.root` and convert the styles for use on browsers that use webcomponents.js instead of using native support.
 - [**declaredProps**](#declaredprops): Used to declare properties, in a way similar to the way Polymer does it. Allows to set observers and synchronizing attributes to properties and viceversa.
+- [**unresolved support**](#unresolved-support): Adds support for the `unresolved` attribute on `<body>`. This snippet is **not** for components, but for apps that don't use Polymer.
 
 ## VanillaJS Web Components?
 
@@ -136,4 +137,12 @@ element.attributeChangedCallback = function (attr, oldVal, newVal) {
   declaredProps.syncProperty(this, properties, attr, newVal);
 };
 ```
+
+### unresolved support
+
+Adds support to the `unresolved` attribute on `<body>`. This snippet is **not** for components, but for apps.
+
+If Polymer or similar are being used on the app, this snippet is **not** necessary; they already handle this on their own.
+
+**Just copy-paste the [unresolved support snippet](magic/fouc.js) into your code, inside a `<script>` tag just AFTER loading webcomponents.js.**
 
