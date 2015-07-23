@@ -1,4 +1,4 @@
-/*jslint browser: true, indent: 2, nomen: true */
+/*jslint browser: true, indent: 2, nomen: true, regexp: true */
 
 /**
  * addShadowRoot
@@ -54,9 +54,11 @@ var addShadowRoot = (function () {
     if (window.ShadowDOMPolyfill) {
       list = obj.root.getElementsByTagName('style');
       Array.prototype.forEach.call(list, function (style) {
+        var name = tagName || idTemplate;
         if (!template.shimmed) {
           shimStyle.innerHTML += style.innerHTML
-            .replace(/:host\b/gm, tagName || idTemplate)
+            .replace(/:host\(([^\)]+)\)/gm, name + '$1')
+            .replace(/:host\b/gm, name)
             .replace(/::shadow\b/gm, ' ')
             .replace(/::content\b/gm, ' ');
         }
